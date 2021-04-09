@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+}
+
+.long-hr {
+  width: 100%;
+}
+
+.short-hr {
+  width: 80%
+}
+
+.header h1 {
+  font-size: 20px;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+}
+
+.bell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.bell-img {
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+}
+
+.header img {
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  border-radius: 40px;
+}
+
+#notification {
+  position:absolute;
+  background-color:#68ff00;
+  top: 17px;
+  right: 165px;
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.divider {
+  border-left: 1px solid grey;
+  height: 50px;
+  padding-right: 5px;
+}
+
+.nav-icon {
+  height: 60px;
+  width: 60px;
+  padding: 5px 15px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  background: lightgrey;
+}
+
+.headline {
+  display: flex;
+  font-size: 20px;
+  padding: 20px;
+  background-color: white;
+}
+
+.main-header-search {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.traffic h3 {
+  padding: 20px;
+}
+
+.traffic-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.daily h3 {
+  padding: 20px;
+}
+
+.mobile h3 {
+  padding: 20px;
+}
+
+.social h3 {
+  padding: 20px;
+}
+
+.social-container {
+  background: lightgrey;
+  margin: 0px 20px;
+  padding: 25px;
+  display: flex;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.social-text p:first-of-type {
+  padding-left: 5px;
+  font-size: 15px;
+}
+
+.social-text p:last-child {
+  font-size: 40px;
+}
+
+.social-icon {
+  height: 50px;
+  width: 50px;
+  padding-right: 10px;
+  fill: purple;
+}
+
+.members h3,
+.activity h3 {
+  padding: 20px;
+}
+
+.members-container,
+.activity-container {
+  display: block;
+  text-align: center;
+  padding: 30px;
+}
+
+.members-container img,
+.activity-container img {
+  height: 70px;
+  border-radius: 70px;
+}
+
+.message h3 {
+  padding: 20px;
+}
+
+.widget-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.widget-container input,
+.widget-container textarea,
+.widget-container button {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  height: 50px;
+  background: lightgrey;
+}
+
+.widget-container input {
+  font-size: 30px;
+}
+
+.widget-container input::placeholder {
+  font-size: 13px;
+}
+
+.widget-container textarea {
+  height: 80px;
+}
+
+.widget-container button {
+  background-color: lightblue;
+}
+
+.settings h3 {
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-area:
+    "header"
+    "nav"
+    "main";
+}
+
+.header {
+  grid-area: "header";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: pink;
+  padding: 10px;
+}
+
+.nav {
+  grid-area: "nav";
+  display: flex;
+  justify-content: center;
+  background: purple;
+}
+
+.main {
+  grid-area: "main";
+  display: grid;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas:
+    "header header"
+    "nav main";
+  }
+
+  .main {
+    grid-template-columns: 50%;
+  }
+
+  .traffic, .social {
+    grid-column: 1 / span 2;
+  }
+
+  .daily, .members, .message {
+    grid-column: 1 / span 1;
+  }
+
+  .mobile, .activity, .settings {
+    grid-column: 2 / span 1;
+  }
+}
+
