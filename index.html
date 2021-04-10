@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/toggle-switch.css">
   <title>Web App Dashboard</title>
 </head>
 <body class="grid-container">
@@ -247,7 +248,7 @@
     <section class="message">
       <h3>MESSAGE USER</h3>
       
-      <form class="widget-container">
+      <form class="message-form-container">
         <input type="text" placeholder="Search for user" class="form-field" id="userField">
         <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
         <button class="button-primary" id="send">Send</button> 
@@ -261,29 +262,29 @@
       <h3>SETTINGS</h3>
 
       <!-- custom CSS toggle code-->
-      <label class="switch-light switch-candy" onclick="">
+      <label class="switch-light switch-ios switch" onclick="">
         <input type="checkbox">
-      
+        
         <strong>
           Send Email Notifications
         </strong>
-      
-        <span>
+        
+        <span id="onOff">
           <span>Off</span>
           <span>On</span>
           <a></a>
         </span>
       </label>
-      
+
       ​<!-- custom CSS toggle code-->
-      <label class="switch-light switch-candy" onclick="">
+      <label class="switch-light switch-ios switch" onclick="">
         <input type="checkbox">
       
         <strong>
           Set Profile to Public
         </strong>
       
-        <span>
+        <span id="onOff">
           <span>Off</span>
           <span>On</span>
           <a></a>

@@ -137,7 +137,7 @@ grid-container {
   margin: 0px 20px;
   padding: 25px;
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   border-radius: 10px;
 }
 
@@ -159,7 +159,8 @@ grid-container {
 
 .members h3,
 .activity h3 {
-  padding: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
 .members-container,
@@ -179,64 +180,84 @@ grid-container {
   padding: 20px;
 }
 
-.widget-container {
+.message-form-container {
   display: flex;
   flex-direction: column;
   padding: 20px;
 }
 
-.widget-container input,
-.widget-container textarea,
-.widget-container button {
+.message-form-container input,
+.message-form-container textarea,
+.message-form-container button {
   margin-bottom: 15px;
   border-radius: 5px;
   height: 50px;
   background: lightgrey;
 }
 
-
-.widget-container input {
+.message-form-container input {
   font-size: 18px;
 }
 
-.widget-container input::placeholder {
+.message-form-container input::placeholder {
   font-size: 13px;
 }
 
-.widget-container textarea {
+.message-form-container textarea {
   height: 80px;
 }
 
-.widget-container button {
+.message-form-container button {
   background-color: lightblue;
 }
 
-.settings {
+.switch {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.switch strong {
+  font-size: 15px;
+}
+
+#onOff {
+  width: 20%;
+  float: right;
+  font-size: 10px;
 }
 
 .settings h3 {
   padding: 20px;
-}
-
-.timezone-form-field {
-  margin: 20px;
-  height: 50px;
-  border-radius: 5px;
-  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
 }
 
 .settings-button {
   text-align: center;
-  margin-bottom: 30px;
+  margin: 30px 20px;
+}
+
+.timezone-form-field {
+  width: calc(100% - 40px);
+  margin: 20px 20px 0px 20px;
+  border-radius: 5px;
+  background-color: lightgrey;
+  height: 40px;
 }
 
 #save,
 #cancel {
-  height: 50px;
-  width: 140px;
   border-radius: 5px;
+  text-align: center;
+  width: 48%;
+  height: 40px;
+  margin-bottom: 30px;
 }
 
-
+#save {
+  float: left;
+}
+#cancel {
+  float: right;
+}
