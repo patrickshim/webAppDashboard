@@ -2,37 +2,6 @@
   box-sizing: border-box;
 }
 
-.header {
-  grid-area: "header";
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: pink;
-  padding: 10px;
-}
-
-.nav {
-  grid-area: "nav";
-  display: flex;
-  justify-content: center;
-  background: purple;
-}
-
-.main {
-  grid-area: "main";
-  display: grid;
-}
-
-grid-container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  grid-area:
-    "header"
-    "nav"
-    "main";
-}
-
 .long-hr {
   width: 100%;
 }
@@ -101,18 +70,21 @@ grid-container {
 .headline {
   display: flex;
   font-size: 20px;
+  font-weight: bold;
   padding: 20px;
   background-color: white;
 }
 
 .main-header-search {
   display: flex;
-  width: 100%;
-  padding: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  width: calc(100% - 20px);
 }
 
 .traffic h3 {
   padding: 20px;
+  font-weight: bold;
 }
 
 .traffic-nav {
@@ -120,16 +92,12 @@ grid-container {
   justify-content: space-evenly;
 }
 
-.daily h3 {
+.daily h3,
+.mobile h3,
+.social h3,
+.message h3 {
   padding: 20px;
-}
-
-.mobile h3 {
-  padding: 20px;
-}
-
-.social h3 {
-  padding: 20px;
+  font-weight: bold;
 }
 
 .social-container {
@@ -159,6 +127,7 @@ grid-container {
 
 .members h3,
 .activity h3 {
+  font-weight: bold;
   padding-left: 20px;
   padding-top: 20px;
 }
@@ -174,10 +143,6 @@ grid-container {
 .activity-container img {
   height: 70px;
   border-radius: 70px;
-}
-
-.message h3 {
-  padding: 20px;
 }
 
 .message-form-container {
@@ -228,6 +193,7 @@ grid-container {
 }
 
 .settings h3 {
+  font-weight: bold;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -260,4 +226,44 @@ grid-container {
 }
 #cancel {
   float: right;
+}
+
+.header {
+  grid-area: "header";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: pink;
+  padding: 10px;
+}
+
+.nav {
+  grid-area: "nav";
+  display: flex;
+  justify-content: center;
+  background: purple;
+}
+
+.main {
+  grid-area: "main";
+  display: grid;
+}
+
+grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main";
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas:
+    "header header"
+    "navigation main";
+  }
 }
