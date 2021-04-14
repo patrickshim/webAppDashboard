@@ -82,6 +82,22 @@
   width: calc(100% - 20px);
 }
 
+.alert {
+  background-color: lightcoral;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.alert-banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.alert-banner p:last-child {
+  cursor: pointer;
+}
+
 .traffic h3 {
   padding: 20px;
   font-weight: bold;
@@ -105,6 +121,7 @@
   margin: 0px 20px;
   padding: 25px;
   display: flex;
+  flex-direction: column;
   margin-bottom: 25px;
   border-radius: 10px;
 }
@@ -224,12 +241,24 @@
 #save {
   float: left;
 }
+
 #cancel {
   float: right;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "navigation"
+    "main";
+}
+
 .header {
-  grid-area: "header";
+  display: grid;
+  grid-area: header;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -238,32 +267,84 @@
 }
 
 .nav {
-  grid-area: "nav";
+  display: grid;
+  grid-area: navigation;
   display: flex;
   justify-content: center;
   background: purple;
 }
 
 .main {
-  grid-area: "main";
+  grid-area: main;
   display: grid;
 }
 
-grid-container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header"
-    "nav"
-    "main";
+@media (max-width: 767px) {
+  .arrow {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
   .grid-container {
+    display: grid;
     grid-template-columns: 55px 1fr;
     grid-template-areas:
-    "header header"
-    "navigation main";
+      "header header"
+      "navigation main"    
+  }
+  
+  .nav {
+    grid-area: "navigation";
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .social-container {
+    display: flex;
+    flex-direction: row;
+    width: 29.3%;
+    height: 100px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+    float: left;
+    align-items: center;
+  }
+
+  .social-container:first-of-type {
+    margin-left: 20px;
+  }
+  
+  .social-icon {
+    height: 50px;
+    width: 50px;
+    fill: purple;
+  }
+
+  .social-text p:first-of-type {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .social-text p:last-child {
+    font-size: 30px;
+  }
+
+  .activity-container,
+  .members-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .activity-splitter,
+  .member-splitter {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .activity-text,
+  .members-text {
+    text-align: start;
+    margin: 15px;
   }
 }
