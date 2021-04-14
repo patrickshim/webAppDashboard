@@ -283,6 +283,10 @@
   .arrow {
     display: none;
   }
+
+  .vl {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -295,9 +299,27 @@
   }
   
   .nav {
-    grid-area: "navigation";
     flex-direction: column;
     justify-content: flex-start;
+  }
+
+  .traffic-nav {
+    display: flex;
+    float: right;
+
+  }
+
+  .traffic-nav-link {
+    padding: 0px 20px;
+  }
+
+  .dailyMobile {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .mobileDailylong-hr {
+    display: none;
   }
 
   .social-container {
