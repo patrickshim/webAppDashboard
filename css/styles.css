@@ -403,8 +403,26 @@
   .settings {
     grid-column: 2 / span 1;
   }
-
-  .settings label:first-of-type {
-    margin-top: 20px;
+  
+  .social-container {
+    width: 30.5%;
   }
+
+  .message textarea {
+    height: 125px;
+  }
+
+  .settings label {
+    margin: 20px 0px;
+  }
+
+  .settings strong {
+    font-size: 20px;
+  }
+
+  #save,
+  #cancel {
+    height: 50px;
+  }
+
 }
