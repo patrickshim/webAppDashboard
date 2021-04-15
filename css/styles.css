@@ -306,7 +306,6 @@
   .traffic-nav {
     display: flex;
     float: right;
-
   }
 
   .traffic-nav-link {
@@ -368,5 +367,42 @@
   .members-text {
     text-align: start;
     margin: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .long-hr {
+    display: none;
+  }
+
+  .short-hr {
+    display: none;
+  }
+
+  .main {
+    grid-template-columns: 50%;
+  }
+
+  .traffic,
+  .social,
+  .main-header,
+  .alert {
+    grid-column: 1 / span 2;
+  }
+
+  .daily,
+  .members,
+  .message {
+    grid-column: 1 / span 1;
+  }
+
+  .mobile,
+  .activity,
+  .settings {
+    grid-column: 2 / span 1;
+  }
+
+  .settings label:first-of-type {
+    margin-top: 20px;
   }
 }
