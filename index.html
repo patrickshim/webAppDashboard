@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/toggle-switch.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
   <title>Web App Dashboard</title>
 </head>
 <body class="grid-container">
@@ -83,10 +84,7 @@
       </div>
     </section>
 
-    <hr class="long-hr">
-
     <!-- bar graph -->
-    <div class="dailyMobile">
       <section class="daily">
         <h3>DAILY TRAFFIC</h3>
 
@@ -95,8 +93,6 @@
           <canvas id="bar-graph"></canvas>
         </div>
       </section>
-
-      <hr class="mobileDailylong-hr">
 
       <!-- Doughnut Graph -->
       <section class="mobile">
@@ -108,9 +104,6 @@
           <canvas id="doughnut-graph"></canvas>
         </div>
       </section>
-    </div>
-
-    <hr class="long-hr">
 
     <div class="social">
       <h3>SOCIAL STATS</h3>
@@ -150,9 +143,6 @@
         </div>
       </div>
     </div>
-    
-    <hr class="long-hr">
-
 
     <!-- new members widget -->
     <section class="members">
@@ -169,8 +159,6 @@
         <p id="date">10/15/15</p>
       </div>
 
-      <hr class="short-hr">
-
       <div class="members-container">
         <div class="member-splitter">
           <img src="images/member-2.jpg" class="profile-image">
@@ -181,8 +169,6 @@
         </div>
         <p>10/15/15</p>
       </div>
-
-      <hr class="short-hr">
 
       <div class="members-container">
         <div class="member-splitter">
@@ -195,8 +181,6 @@
         <p>10/15/15</p>
       </div>      
       
-      <hr class="short-hr">
-
       <div class="members-container">
         <div class="member-splitter">
           <img src="images/member-4.jpg" class="profile-image">
@@ -208,8 +192,6 @@
         <p>10/15/15</p>
       </div>
     </section>
-
-    <hr class="long-hr"> 
 
     <!-- Recent Activity widget -->
     <section class="activity">
@@ -226,8 +208,6 @@
         <p class="arrow">></p>
       </div>
 
-      <hr class="short-hr">
-
       <div class="activity-container">
         <div class="activity-splitter">
           <img src="images/member-2.jpg" class="profile-image">
@@ -239,8 +219,6 @@
         <p class="arrow">></p>
       </div>
 
-      <hr class="short-hr">
-
       <div class="activity-container">
         <div class="activity-splitter">
           <img src="images/member-3.jpg" class="profile-image">
@@ -251,8 +229,6 @@
         </div>
         <p class="arrow">></p>
       </div>
-
-      <hr class="short-hr">
 
       <div class="activity-container">
         <div class="activity-splitter">
@@ -266,8 +242,6 @@
       </div>
     </section>
 
-    <hr class="long-hr">
-
     <!-- messaging widget -->    
     <section class="message">
       <h3>MESSAGE USER</h3>
@@ -278,8 +252,6 @@
         <button class="button-primary" id="send">Send</button> 
       </form>
     </section>
-
-    <hr class="long-hr">
 
     <!-- local settings widget -->
     <section class="settings">

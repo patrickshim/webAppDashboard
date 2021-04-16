@@ -2,14 +2,6 @@
   box-sizing: border-box;
 }
 
-.long-hr {
-  width: 100%;
-}
-
-.short-hr {
-  width: 80%
-}
-
 .header h1 {
   font-size: 20px;
 }
@@ -106,6 +98,11 @@
 .traffic-nav {
   display: flex;
   justify-content: space-evenly;
+}
+
+.widget-container-full,
+.widget-container-half {
+  padding-left: 20px;
 }
 
 .daily h3,
@@ -285,10 +282,6 @@
   .arrow {
     display: none;
   }
-
-  .vl {
-    display: none;
-  }
 }
 
 @media (min-width: 768px) {
@@ -299,7 +292,30 @@
       "header header"
       "navigation main"    
   }
-  
+
+  .main {
+    grid-template-columns: 50%;
+  }
+
+  .traffic,
+  .social,
+  .main-header,
+  .alert,
+  .members,
+  .activity,
+  .message,
+  .settings {
+    grid-column: 1 / span 2;
+  }
+
+  .daily {
+    grid-column: 1 / span 1;
+  }
+
+  .mobile {
+    grid-column: 2 / span 1;
+  }
+
   .nav {
     flex-direction: column;
     justify-content: flex-start;
@@ -312,11 +328,6 @@
 
   .traffic-nav-link {
     padding: 0px 20px;
-  }
-
-  .dailyMobile {
-    display: grid;
-    grid-template-columns: 50% 50%;
   }
 
   .mobileDailylong-hr {
@@ -373,14 +384,6 @@
 }
 
 @media (min-width: 1024px) {
-  .long-hr {
-    display: none;
-  }
-
-  .short-hr {
-    display: none;
-  }
-
   .main {
     grid-template-columns: 50%;
   }
@@ -424,5 +427,4 @@
   #cancel {
     height: 50px;
   }
-
 }
