@@ -76,12 +76,13 @@
 
 .alert {
   background-color: lightcoral;
-  margin: 30px;
-  padding: 30px;
+  margin: 15px;
+  padding: 15px;
   border-radius: 20px;
 }
 
 .alert-banner {
+  font-size: 12px;
   display: flex;
   justify-content: space-between;
 }
@@ -98,6 +99,7 @@
 .traffic-nav {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 20px;
 }
 
 .widget-container-full,
@@ -321,6 +323,17 @@
     justify-content: flex-start;
   }
 
+  .alert {
+    background-color: lightcoral;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  .alert-banner {
+    font-size: 20px;
+  }
+
   .traffic-nav {
     display: flex;
     float: right;
@@ -328,10 +341,6 @@
 
   .traffic-nav-link {
     padding: 0px 20px;
-  }
-
-  .mobileDailylong-hr {
-    display: none;
   }
 
   .social-container {
@@ -380,6 +389,19 @@
   .members-text {
     text-align: start;
     margin: 15px;
+  }
+
+  .widget-container-full {
+    width: 90vw;
+    }
+
+  .widget-container-half-1 {
+    padding-left: 20px;
+    width: 45vw;  
+  }
+  
+  .widget-container-half {
+    width: 30vw;
   }
 }
 
