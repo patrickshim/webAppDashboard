@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/toggle-switch.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
   <title>Web App Dashboard</title>
 </head>
 <body class="grid-container">
@@ -54,11 +52,7 @@
   <main class="main">
     <div class="main-header">
       <h2 class="headline">Dashboard</h2>
-      <div class="main-header-right-side">
-        <div class="main-header-search">
-          <input id="search-bar" type="search" placeholder="Search..." />
-        </div>
-      </div>
+      <div class="main-header-search"></div>
     </div>
 
     <!-- alert banner -->
@@ -88,7 +82,7 @@
       <section class="daily">
         <h3>DAILY TRAFFIC</h3>
 
-        <div class="widget-container-half-1">
+        <div class="widget-container-half">
           <!-- element line graph will attach to -->
           <canvas id="bar-graph"></canvas>
         </div>
@@ -301,6 +295,11 @@
       </div>
     </section>
   </main>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+  integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
+  crossorigin="anonymous"
+></script>
   <script src="js/script.js"></script>
 </body>
 </html>
