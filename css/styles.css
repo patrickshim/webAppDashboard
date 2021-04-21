@@ -238,7 +238,6 @@
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 20px;
-  margin-right: 10px;
 }
 
 .widget-container-full,
@@ -460,15 +459,13 @@
     padding: 0px 20px;
   }
 
-  .social-container {
+  .big-social-container {
     display: flex;
-    flex-direction: row;
-    width: 29.3%;
-    height: 100px;
-    margin-right: 2px;
-    margin-bottom: 10px;
-    float: left;
-    align-items: center;
+    justify-content: space-between;
+  }
+
+  .social-container {
+    width: 30%;
   }
 
   .social-container:first-of-type {
@@ -536,10 +533,23 @@
   .settings {
     grid-column: 2 / span 1;
   }
-  
-  .social-container {
-    width: 30.5%;
+
+  .widget-container-full {
+    width: 93vw;
   }
+
+  .widget-container-full {
+    margin: 0 auto;
+  }
+
+  .widget-container-half {
+    width: 45vw;
+  }
+
+  .widget-container-half {
+    margin: 0 auto;
+  }
+
 
   .message textarea {
     height: 125px;

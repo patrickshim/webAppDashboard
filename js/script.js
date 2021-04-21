@@ -133,7 +133,25 @@ const dailyData = {
     options: mobileOptions
   });
 
-  function sendMessage() {
-    alert("Message Sent!");
+const send = document.getElementById("send");
+const userField = document.getElementById("userField");
+const messageField = document.getElementById("messageField");
+
+send.addEventListener("click", (e) => {
+  if (userField.value === "" & messageField.value === "") {
+    alert("User field and message field cannot be empty");
+    e.preventDefault();
+  } else if (userField.value === "") {
+    alert("User field cannot be empty"); 
+    e.preventDefault();
+  } else if (messageField.value === "") {
+    alert("Message field cannot be empty");
+    e.preventDefault();
+  } else {
+    alert (`Message sent succesfully to ${userField.value}`); 
+    e.preventDefault();
+    userField.value = "";
+    messageField.value = "";
   }
+})
   
