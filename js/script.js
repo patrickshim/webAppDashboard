@@ -132,3 +132,8 @@ const dailyData = {
     data: mobileData,
     options: mobileOptions
   });
+
+  function sendMessage() {
+    alert("Message Sent!");
+  }
+  

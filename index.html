@@ -52,7 +52,9 @@
   <main class="main">
     <div class="main-header">
       <h2 class="headline">Dashboard</h2>
-      <div class="main-header-search"></div>
+      <div class="main-header-search">
+        <input type="search" placeholder="Search...">
+      </div>
     </div>
 
     <!-- alert banner -->
@@ -240,9 +242,9 @@
     <section class="message">
       <h3>MESSAGE USER</h3>
       
-      <form class="message-form-container">
-        <input type="text" placeholder="Search for user" class="form-field" id="userField">
-        <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
+      <form onSubmit= "sendMessage()" name="form" class="message-form-container">
+        <input name= "textField" type="text" placeholder="Search for user" class="form-field" id="userField" required>
+        <textarea name="formField" placeholder="Message for user" class="form-area" id="messageField" required></textarea>
         <button class="button-primary" id="send">Send</button> 
       </form>
     </section>
