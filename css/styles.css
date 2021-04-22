@@ -564,6 +564,16 @@
     height: 125px;
   }
 
+  .message-form-container input::placeholder,
+  #messageField,
+  #timezone {
+    font-size: 20px;
+  }
+
+  #send {
+    font-size: 20px;
+  }
+
   .settings label {
     margin: 10px 0px;
   }
@@ -582,5 +592,6 @@
   #save,
   #cancel {
     height: 50px;
+    font-size: 20px;
   }
 }
