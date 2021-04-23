@@ -544,7 +544,8 @@
     margin-top: 20px;
   }
 
-  #switch {
+  #switch-1,
+  #switch-2 {
     display: flex;
     justify-content: flex-start;
     padding-left: 20px;
