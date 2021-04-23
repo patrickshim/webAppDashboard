@@ -348,21 +348,23 @@
   color: white;
 }
 
-.switch {
+#switch {
   display: flex;
   justify-content: space-between;
-  padding: 0px 20px;
+  padding-left: 20px;
 }
 
-.switch strong {
+#switch span {
+  width: 30%;
+}
+
+.switch span {
+  padding-left: 10px;
+}
+
+#switch strong {
   font-size: 15px;
-}
-
-#onOff {
-  float: right;
-  width: 25%;
-  font-size: 14px;
-  cursor: pointer;
+  width: 55%;
 }
 
 .settings h3 {
@@ -467,6 +469,7 @@
   .message-form-container input::placeholder,
   #messageField,
   #timezone, 
+  #switch strong,
   .settings h3,
   .settings strong,
   #save,
@@ -536,15 +539,24 @@
     font-size: 15px;
   }
 
-  #date,
+  .date,
   .arrow {
     margin-top: 20px;
   }
 
-  #onOff {
-    display: inline-block;
-    width: 20%;
-    font-size: 14px;
+  #switch {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+
+  #switch span {
+    width: 15%;
+    margin-left: 10px;
+  }
+  
+  #switch strong {
+    width: 40%;
   }
 
   .widget-container-full {
@@ -576,22 +588,6 @@
     grid-column: 2 / span 1;
   }
 
-  .widget-container-full {
-    width: 93vw;
-  }
-
-  .widget-container-full {
-    margin: 0 auto;
-  }
-
-  .widget-container-half {
-    width: 40vw;
-  }
-
-  .widget-container-half {
-    margin: 0 auto;
-  }
-
   .social p {
     margin-left: 10px;
   }  
@@ -612,16 +608,21 @@
     font-size: 20px;
   }
 
-  #onOff {
-    float: right;
-    width: 20%;
-    margin-bottom: 21.5px;
-    cursor: pointer;
-    font-size: 15.5px;
-  }
-
   #save,
   #cancel {
     height: 50px;
+  }
+
+  .widget-container-full {
+    width: 93vw;
+  }
+
+  .widget-container-full,
+  .widget-container-half {
+    margin: 0 auto;
+  }
+
+  .widget-container-half {
+    width: 40vw;
   }
 }

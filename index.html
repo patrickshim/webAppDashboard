@@ -19,7 +19,7 @@
         <div id="notification"></div>
       </div>
       <div class="divider"></div>
-      <img src="images/member-1.jpg">
+      <img src="images/member-1.jpg" alt="member-1-photo">
       <h3>Student Name</h3>
     </div>
   </header>
@@ -131,7 +131,6 @@
         <div class="social-container">
           <div class="social-image">
             <svg class="social-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <cicle cx="0" cy="0" r="0" fill="purple"></cicle>
               <path d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z"/>
             </svg>        
           </div>
@@ -148,46 +147,46 @@
       
       <div class="members-container">
         <div class="member-splitter">
-          <img src="images/member-1.jpg" class="profile-image">
+          <img src="images/member-1.jpg" class="profile-image" alt="member-1-photo">
           <div class="members-text">
             <p>Victoria Chambers</p>
             <a href="#">victoria.chambers80@example.com</a>
           </div>
         </div>
-        <p id="date">10/15/15</p>
+        <p class="date">10/15/15</p>
       </div>
 
       <div class="members-container">
         <div class="member-splitter">
-          <img src="images/member-2.jpg" class="profile-image">
+          <img src="images/member-2.jpg" class="profile-image" alt="member-2-photo">
           <div class="members-text">
             <p>Dale Byrd</p>
             <a href="#">dale.byrd52@example.com</a>
           </div>
         </div>
-        <p id="date">10/15/15</p>
+        <p class="date">10/15/15</p>
       </div>
 
       <div class="members-container">
         <div class="member-splitter">
-          <img src="images/member-3.jpg" class="profile-image">
+          <img src="images/member-3.jpg" class="profile-image" alt="member-3-photo">
           <div class="members-text">
             <p>Dawn Wood</p>
             <a href="#">dawn.wood16@example.com</a>
           </div>
         </div>
-        <p id="date">10/15/15</p>
+        <p class="date">10/15/15</p>
       </div>      
       
       <div class="members-container">
         <div class="member-splitter">
-          <img src="images/member-4.jpg" class="profile-image">
+          <img src="images/member-4.jpg" class="profile-image" alt="member-4-photo">
           <div class="members-text">
             <p>Dan Oliver</p>
             <a href="#">dan.oliver2@example.com</a>
           </div>
         </div>
-        <p id="date">10/15/15</p>
+        <p class="date">10/15/15</p>
       </div>
     </section>
 
@@ -197,7 +196,7 @@
       
       <div class="activity-container">
         <div class="activity-splitter">
-          <img src="images/member-1.jpg" class="profile-image">
+          <img src="images/member-1.jpg" class="profile-image" alt="member-1-photo">
           <div class="activity-text">
             <p>Victoria Chambers commented on <b>WebApp's SEO Tips</b></p>
             <p>4 hours ago</p>
@@ -208,7 +207,7 @@
 
       <div class="activity-container">
         <div class="activity-splitter">
-          <img src="images/member-2.jpg" class="profile-image">
+          <img src="images/member-2.jpg" class="profile-image" alt="member-2-photo">
           <div class="activity-text">
             <p>Dale Byrd commented on <b>WebApp's SEO Tips</b></p>
             <p>5 hours ago</p>
@@ -219,7 +218,7 @@
 
       <div class="activity-container">
         <div class="activity-splitter">
-          <img src="images/member-3.jpg" class="profile-image">
+          <img src="images/member-3.jpg" class="profile-image" alt="member-3-photo">
           <div class="activity-text">
             <p>Dawn Wood commented on <b>WebApp's SEO Tips</b></p>
             <p>5 hours ago</p>
@@ -230,7 +229,7 @@
 
       <div class="activity-container">
         <div class="activity-splitter">
-          <img src="images/member-4.jpg" class="profile-image">
+          <img src="images/member-4.jpg" class="profile-image" alt="member-4-photo">
           <div class="activity-text">
             <p>Dan Oliver commented on <b>WebApp's SEO Tips</b></p>
             <p>1 day ago</p>
@@ -256,14 +255,14 @@
       <h3>SETTINGS</h3>
 
       <!-- custom CSS toggle code-->
-      <label class="switch-light switch-ios switch" onclick="">
+      <label class="switch-light switch-ios switch" id="switch" onclick="">
         <input type="checkbox">
         
         <strong>
           Send Email Notifications
         </strong>
         
-        <span id="onOff">
+        <span class="onOff">
           <span>Off</span>
           <span>On</span>
           <a></a>
@@ -271,14 +270,14 @@
       </label>
 
       ​<!-- custom CSS toggle code-->
-      <label class="switch-light switch-ios switch" onclick="">
+      <label class="switch-light switch-ios switch" id="switch" onclick="">
         <input type="checkbox">
       
         <strong>
           Set Profile to Public
         </strong>
       
-        <span id="onOff">
+        <span class="onOff">
           <span>Off</span>
           <span>On</span>
           <a></a>
