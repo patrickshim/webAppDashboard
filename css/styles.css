@@ -277,10 +277,19 @@
 }
 
 .social-icon {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   padding-right: 10px;
+  margin-left: 15px;
+  margin-top: 8px;
   fill: white;
+}
+
+.social-image {
+  background-color: #7477bf;
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
 }
 
 .members h3,
@@ -446,6 +455,7 @@
     justify-content: flex-start;
   }
 
+  .header h1,
   .traffic-header h3,
   .traffic-nav li,
   .daily h3,
@@ -496,21 +506,6 @@
 
   .social-container:first-of-type {
     margin-left: 20px;
-  }
-  
-  .social-icon {
-    height: 40px;
-    width: 40px;
-    margin-left: 16px;
-    margin-top: 10px;
-    fill: white;
-  }
-
-  .social-image {
-    background-color: #7477bf;
-    height: 4em;
-    width: 4em;
-    border-radius: 100px;
   }
 
   .social-text p:first-of-type {
@@ -597,6 +592,10 @@
     margin: 0 auto;
   }
 
+  .social p {
+    margin-left: 10px;
+  }  
+
   .message textarea {
     height: 150px;
   }
@@ -618,6 +617,7 @@
     width: 20%;
     margin-bottom: 21.5px;
     cursor: pointer;
+    font-size: 15.5px;
   }
 
   #save,
