@@ -155,3 +155,5 @@ send.addEventListener("click", (e) => {
   }
 })
   
+const audio = new Audio();
+audio.src = "sound/youGotmail.mp3";
