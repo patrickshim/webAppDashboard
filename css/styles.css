@@ -45,7 +45,6 @@
 
 .header h3 {
   color: white;
-
 }
 
 .right-side {
@@ -348,23 +347,26 @@
   color: white;
 }
 
-#switch {
+#switch-1,
+#switch-2 {
   display: flex;
   justify-content: space-between;
   padding-left: 20px;
 }
 
-#switch span {
-  width: 30%;
+#switch-1 span,
+#switch-2 span {
+  width: 25%;
 }
 
 .switch span {
   padding-left: 10px;
 }
 
-#switch strong {
-  font-size: 15px;
-  width: 55%;
+#switch-1 strong,
+#switch-2 strong {
+  font-size: 16px;
+  width: 60%;
 }
 
 .settings h3 {
@@ -469,7 +471,8 @@
   .message-form-container input::placeholder,
   #messageField,
   #timezone, 
-  #switch strong,
+  #switch-1 strong,
+  #switch-2 strong,
   .settings h3,
   .settings strong,
   #save,
@@ -551,13 +554,19 @@
     padding-left: 20px;
   }
 
-  #switch span {
+  #switch-1 span,
+  #switch-2 span {
     width: 15%;
     margin-left: 10px;
   }
   
-  #switch strong {
+  #switch-1 strong,
+  #switch-2 strong {
     width: 40%;
+  }
+
+  .onOff {
+    font-size: 20px;
   }
 
   .widget-container-full {
@@ -589,6 +598,48 @@
     grid-column: 2 / span 1;
   }
 
+  .bell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+  }
+  
+  .bell-img {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    fill: white;
+  }
+  
+  .header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+  }
+  
+  #notification {
+    position:absolute;
+    background-color:#68ff00;
+    top: 17px;
+    right: 270px;
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+  }
+  
+  .divider {
+    border-left: 1px solid lightgrey;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .header h3 {
+    color: white;
+    font-size: 20px;
+    padding: 0px 15px;
+  }
+
   .social p {
     margin-left: 10px;
   }  
@@ -607,6 +658,10 @@
 
   .settings strong {
     font-size: 20px;
+  }
+
+  #timezone {
+    margin-top: 45px;
   }
 
   #save,
