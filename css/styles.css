@@ -43,10 +43,6 @@
   color: white;
 }
 
-.header h3 {
-  color: white;
-}
-
 .right-side {
   display: flex;
   align-items: center;
@@ -161,13 +157,6 @@
   100% { transform: rotate(0); }
 }
 
-.header img {
-  width: 45px;
-  height: 45px;
-  padding: 5px;
-  border-radius: 40px;
-}
-
 #notification {
   position:absolute;
   background-color:#68ff00;
@@ -182,6 +171,17 @@
   border-left: 1px solid lightgrey;
   height: 50px;
   padding-right: 5px;
+}
+
+.header img {
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  border-radius: 40px;
+}
+
+.header h3 {
+  color: white;
 }
 
 .nav-icon {
@@ -203,13 +203,6 @@
   font-weight: bold;
   padding: 20px;
   background-color: white;
-}
-
-.main-header-search input{
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px;
-  width: calc(100% - 20px);
 }
 
 .alert {
@@ -356,7 +349,7 @@
 
 #switch-1 span,
 #switch-2 span {
-  width: 25%;
+  width: 90px;;
 }
 
 .switch span {
@@ -553,12 +546,6 @@
     justify-content: flex-start;
     padding-left: 20px;
   }
-
-  #switch-1 span,
-  #switch-2 span {
-    width: 15%;
-    margin-left: 10px;
-  }
   
   #switch-1 strong,
   #switch-2 strong {
@@ -599,43 +586,29 @@
   }
 
   .bell {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-right: 30px;
   }
   
   .bell-img {
     width: 45px;
     height: 45px;
-    cursor: pointer;
-    fill: white;
   }
   
   .header img {
     width: 60px;
     height: 60px;
-    border-radius: 40px;
   }
   
   #notification {
-    position:absolute;
-    background-color:#68ff00;
-    top: 17px;
     right: 270px;
     width: 5px;
-    height: 5px;
-    border-radius: 10px;
   }
   
   .divider {
-    border-left: 1px solid lightgrey;
-    height: 50px;
     margin-right: 20px;
   }
   
   .header h3 {
-    color: white;
     font-size: 20px;
     padding: 0px 15px;
   }
@@ -656,8 +629,14 @@
     margin-top: 20px;
   }
 
-  .settings strong {
-    font-size: 20px;
+  #switch-1 span,
+  #switch-2 span {
+    width: 90px;
+  }
+  
+  #switch-1 strong,
+  #switch-2 strong {
+    width: 50%;
   }
 
   #timezone {
