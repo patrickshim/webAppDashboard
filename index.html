@@ -241,7 +241,13 @@
       <h3>MESSAGE USER</h3>
       
       <form onSubmit= "sendMessage()" name="form" class="message-form-container">
-        <input name= "textField" type="text" placeholder="Search for user" class="form-field" id="userField">
+        <input name= "textField" type="text" placeholder="Search for user" class="form-field" id="userField" list="member-list">
+        <datalist id="member-list">
+          <option>Victoria Chambers</option>
+          <option>Dale Byrd</option>
+          <option>Dawn Wood</option>
+          <option>Dan Oliver</option>
+        </datalist>
         <textarea name="formField" placeholder="Message for user" class="form-area" id="messageField"></textarea>
         <button class="button-primary" id="send">Send</button> 
       </form>
